@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Firstname Lastname — Resume</title>
+  <meta name="description" content="One-page, ATS-friendly resume template in pure HTML & CSS with print styles." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page" role="main">
+    <header>
+      <div>
+        <h1>Firstname Lastname</h1>
+        <p class="role">Job Title • Specialty or Focus</p>
+      </div>
+      <div class="contacts" aria-label="Contact information">
+        <span>City, Country</span>
+        <a href="mailto:firstname.lastname@email.com">firstname.lastname@email.com</a>
+        <a href="tel:+1234567890">+1 (234) 567-890</a>
+        <a href="https://linkedin.com/in/yourhandle">linkedin.com/in/yourhandle</a>
+        <a href="https://github.com/yourhandle">github.com/yourhandle</a>
+      </div>
+    </header>
+
+    <section aria-labelledby="summary">
+      <h2 id="summary">Summary</h2>
+      <p class="summary">
+        Concise (2–3 lines) value statement focused on outcomes and scope. Mention years of experience, domains,
+        and a notable achievement with measurable impact. Use keywords that match the job description.
+      </p>
+    </section>
+
+    <div class="grid">
+      <!-- Main column: Experience -->
+      <section aria-labelledby="experience">
+        <h2 id="experience">Experience</h2>
+
+        <article class="item" aria-labelledby="exp-1-title">
+          <div class="item-header">
+            <div class="item-title" id="exp-1-title">Senior Role — Company Name</div>
+            <div class="item-meta">Jan 2022 – Present · City, Country</div>
+          </div>
+          <div class="item-meta">Team/Org • Stack/Tools if relevant</div>
+          <ul class="bullets">
+            <li>Led <strong>N</strong>-person team to deliver <em>project</em>, improving <strong>KPI</strong> by <strong>X%</strong>.</li>
+            <li>Designed and shipped <em>feature</em> used by <strong>N</strong> users; reduced costs by <strong>$Y</strong>/year.</li>
+            <li>Collaborated with <em>partner teams</em> to integrate <em>system</em>, cutting latency by <strong>Z ms</strong>.</li>
+          </ul>
+        </article>
+
+        <article class="item" aria-labelledby="exp-2-title">
+          <div class="item-header">
+            <div class="item-title" id="exp-2-title">Previous Role — Company Name</div>
+            <div class="item-meta">Aug 2019 – Dec 2021 · City, Country</div>
+          </div>
+          <ul class="bullets">
+            <li>Delivered <em>initiative</em> from discovery to launch; A/B test showed <strong>+X%</strong> in conversion.</li>
+            <li>Refactored <em>legacy module</em>, decreasing incidents by <strong>N%</strong> and MTTR by <strong>T</strong> minutes.</li>
+            <li>Mentored <strong>N</strong> juniors; authored playbooks and onboarding materials.</li>
+          </ul>
+        </article>
+
+        <!-- Add more roles as needed, newest first -->
+
+        <h2 id="projects">Projects</h2>
+        <article class="item" aria-labelledby="proj-1-title">
+          <div class="item-header">
+            <div class="item-title" id="proj-1-title">Project/App Name</div>
+            <div class="item-meta">Open Source · 2024</div>
+          </div>
+          <ul class="bullets">
+            <li>What it does, who it’s for, and the measurable result (stars, users, perf numbers).</li>
+            <li>Link to repo or live demo: <a href="#">github.com/yourhandle/yourproject</a>.</li>
+          </ul>
+        </article>
+
+      </section>
+
+      <!-- Sidebar column: Skills, Education, etc. -->
+      <aside aria-labelledby="skills">
+        <h2 id="skills">Skills</h2>
+        <ul class="chips" aria-label="Skills list">
+          <li class="chip">Skill One</li>
+          <li class="chip">Skill Two</li>
+          <li class="chip">Skill Three</li>
+          <li class="chip">Framework</li>
+          <li class="chip">Tool</li>
+          <li class="chip">Cloud/DB</li>
+        </ul>
+
+        <h2 id="education">Education</h2>
+        <article class="item" aria-labelledby="edu-1-title">
+          <div class="item-header">
+            <div class="item-title" id="edu-1-title">University Name — Degree</div>
+            <div class="item-meta">2015 – 2019</div>
+          </div>
+          <div class="item-meta">Major/Concentration • Honors if any</div>
+        </article>
+
+        <h2 id="certs">Certifications</h2>
+        <article class="item">
+          <div class="item-header">
+            <div class="item-title">Certification Name</div>
+            <div class="item-meta">Issuer · Year</div>
+          </div>
+        </article>
+
+        <h2 id="awards">Awards</h2>
+        <article class="item">
+          <div class="item-header">
+            <div class="item-title">Award / Recognition</div>
+            <div class="item-meta">Org · Year</div>
+          </div>
+        </article>
+      </aside>
+    </div>
+
+    <section aria-labelledby="extras">
+      <h2 id="extras">Additional</h2>
+      <ul class="bullets">
+        <li>Volunteer experience · Languages · Publications · Speaking</li>
+        <li>Only include if it strengthens your candidacy for this role.</li>
+      </ul>
+    </section>
+
+    <footer class="section" aria-label="Footer">
+      <hr style="border:0;border-top:1px solid var(--border);margin:18px 0;" />
+      <p class="item-meta" style="text-align:center;">
+        References available upon request · Last updated: <span id="updated"></span>
+      </p>
+    </footer>
+  </main>
+
+  <script>
+    // Auto‑fill the "Last updated" date
+    (function(){
+      const el = document.getElementById('updated');
+      if (el) {
+        const d = new Date();
+        el.textContent = d.toLocaleDateString(undefined, { year: 'numeric', month: 'short' });
+      }
+    })();
+  </script>
+</body>
+</html>
