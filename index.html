@@ -3,144 +3,148 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Firstname Lastname — Resume</title>
-  <meta name="description" content="One-page, ATS-friendly resume template in pure HTML & CSS with print styles." />
-  <link rel="stylesheet" href="style.css" />
+  <title>Julee Makhecha — Network Engineer</title>
+  <meta name="description" content="ATS-friendly, creative resume & portfolio for a Network/IT Systems Engineer." />
+  <link rel="stylesheet" href="style_a.css" />
 </head>
 <body>
-  <main class="page" role="main">
-    <header>
-      <div>
-        <h1>Firstname Lastname</h1>
-        <p class="role">Job Title • Specialty or Focus</p>
-      </div>
-      <div class="contacts" aria-label="Contact information">
-        <span>City, Country</span>
-        <a href="mailto:firstname.lastname@email.com">firstname.lastname@email.com</a>
-        <a href="tel:+1234567890">+1 (234) 567-890</a>
-        <a href="https://linkedin.com/in/yourhandle">linkedin.com/in/yourhandle</a>
-        <a href="https://github.com/yourhandle">github.com/yourhandle</a>
-      </div>
-    </header>
+  <a class="skip" href="#main">Skip to content</a>
 
+  <header class="site-header" role="banner">
+    <div class="theme-toggle" role="group" aria-label="Theme toggle">
+      <button id="themeBtn" aria-pressed="false" title="Toggle theme">🌓</button>
+    </div>
+  </header>
+
+  <section class="hero mesh" aria-label="Intro">
+    <div class="hero-inner">
+      <h1>Julee Makhecha</h1>
+      <p class="subtitle">IT Systems & Network Engineer · MSc in Networking · Open to Visa-Sponsored Roles</p>
+      <ul class="contact">
+        <li>Stanmore, England, United Kingdom</li>
+        <li><a href="mailto:juliemakhecha00@gmail.com">juliemakhecha00@gmail.com</a></li>
+        <li><a href="tel:07507399556">07507399556</a></li>
+        <li><a href="https://www.linkedin.com/in/julee-makhecha" rel="noopener">linkedin.com/in/julee-makhecha</a></li>
+      </ul>
+      <div class="cta">
+        <a class="btn" href="#resume">Download Résumé (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="main" class="page" role="main">
     <section aria-labelledby="summary">
       <h2 id="summary">Summary</h2>
-      <p class="summary">
-        Concise (2–3 lines) value statement focused on outcomes and scope. Mention years of experience, domains,
-        and a notable achievement with measurable impact. Use keywords that match the job description.
+      <p>
+        Versatile Network & IT Systems Engineer with hands-on experience designing, configuring, and
+        maintaining secure, high‑availability infrastructure. Skilled across firewall administration (Sophos, Cisco FMC/FTD),
+        enterprise wireless (Meraki), virtualization (VMware), automation (Ansible, GitLab CI/CD), monitoring (Graylog), and
+        identity/services (AD, GPOs, DNS/DHCP). Known for clear documentation, vendor collaboration, and resilient solutions.
       </p>
     </section>
 
-    <div class="grid">
-      <!-- Main column: Experience -->
-      <section aria-labelledby="experience">
-        <h2 id="experience">Experience</h2>
-
-        <article class="item" aria-labelledby="exp-1-title">
-          <div class="item-header">
-            <div class="item-title" id="exp-1-title">Senior Role — Company Name</div>
-            <div class="item-meta">Jan 2022 – Present · City, Country</div>
-          </div>
-          <div class="item-meta">Team/Org • Stack/Tools if relevant</div>
-          <ul class="bullets">
-            <li>Led <strong>N</strong>-person team to deliver <em>project</em>, improving <strong>KPI</strong> by <strong>X%</strong>.</li>
-            <li>Designed and shipped <em>feature</em> used by <strong>N</strong> users; reduced costs by <strong>$Y</strong>/year.</li>
-            <li>Collaborated with <em>partner teams</em> to integrate <em>system</em>, cutting latency by <strong>Z ms</strong>.</li>
-          </ul>
-        </article>
-
-        <article class="item" aria-labelledby="exp-2-title">
-          <div class="item-header">
-            <div class="item-title" id="exp-2-title">Previous Role — Company Name</div>
-            <div class="item-meta">Aug 2019 – Dec 2021 · City, Country</div>
-          </div>
-          <ul class="bullets">
-            <li>Delivered <em>initiative</em> from discovery to launch; A/B test showed <strong>+X%</strong> in conversion.</li>
-            <li>Refactored <em>legacy module</em>, decreasing incidents by <strong>N%</strong> and MTTR by <strong>T</strong> minutes.</li>
-            <li>Mentored <strong>N</strong> juniors; authored playbooks and onboarding materials.</li>
-          </ul>
-        </article>
-
-        <!-- Add more roles as needed, newest first -->
-
-        <h2 id="projects">Projects</h2>
-        <article class="item" aria-labelledby="proj-1-title">
-          <div class="item-header">
-            <div class="item-title" id="proj-1-title">Project/App Name</div>
-            <div class="item-meta">Open Source · 2024</div>
-          </div>
-          <ul class="bullets">
-            <li>What it does, who it’s for, and the measurable result (stars, users, perf numbers).</li>
-            <li>Link to repo or live demo: <a href="#">github.com/yourhandle/yourproject</a>.</li>
-          </ul>
-        </article>
-
-      </section>
-
-      <!-- Sidebar column: Skills, Education, etc. -->
-      <aside aria-labelledby="skills">
-        <h2 id="skills">Skills</h2>
-        <ul class="chips" aria-label="Skills list">
-          <li class="chip">Skill One</li>
-          <li class="chip">Skill Two</li>
-          <li class="chip">Skill Three</li>
-          <li class="chip">Framework</li>
-          <li class="chip">Tool</li>
-          <li class="chip">Cloud/DB</li>
-        </ul>
-
-        <h2 id="education">Education</h2>
-        <article class="item" aria-labelledby="edu-1-title">
-          <div class="item-header">
-            <div class="item-title" id="edu-1-title">University Name — Degree</div>
-            <div class="item-meta">2015 – 2019</div>
-          </div>
-          <div class="item-meta">Major/Concentration • Honors if any</div>
-        </article>
-
-        <h2 id="certs">Certifications</h2>
-        <article class="item">
-          <div class="item-header">
-            <div class="item-title">Certification Name</div>
-            <div class="item-meta">Issuer · Year</div>
-          </div>
-        </article>
-
-        <h2 id="awards">Awards</h2>
-        <article class="item">
-          <div class="item-header">
-            <div class="item-title">Award / Recognition</div>
-            <div class="item-meta">Org · Year</div>
-          </div>
-        </article>
-      </aside>
-    </div>
-
-    <section aria-labelledby="extras">
-      <h2 id="extras">Additional</h2>
-      <ul class="bullets">
-        <li>Volunteer experience · Languages · Publications · Speaking</li>
-        <li>Only include if it strengthens your candidacy for this role.</li>
+    <section aria-labelledby="skills">
+      <h2 id="skills">Core Skills</h2>
+      <ul class="chips" aria-label="Skills">
+        <li>Cisco Routing & Switching</li><li>Network Security</li><li>Firewall Admin (Sophos, FMC/FTD)</li>
+        <li>Meraki Wireless</li><li>VLANs</li><li>DHCP</li><li>DNS</li><li>EAP/802.1X</li>
+        <li>VMware (ESXi/VMs)</li><li>Graylog</li><li>Ansible</li><li>GitLab CI/CD</li>
+        <li>Active Directory / GPO</li><li>SCCM</li><li>Intune</li><li>Google Workspace (Admin)</li>
+        <li>AOVPN</li><li>Wireshark</li><li>PowerShell</li>
       </ul>
     </section>
 
-    <footer class="section" aria-label="Footer">
-      <hr style="border:0;border-top:1px solid var(--border);margin:18px 0;" />
-      <p class="item-meta" style="text-align:center;">
-        References available upon request · Last updated: <span id="updated"></span>
-      </p>
-    </footer>
+    <section aria-labelledby="experience">
+      <h2 id="experience">Experience</h2>
+
+      <article class="item" aria-labelledby="exp1">
+        <div class="item-header">
+          <h3 id="exp1">Information Technology System Engineer — Barnet and Southgate College</h3>
+          <span class="meta">Jan 2023 – Present · London, UK</span>
+        </div>
+        <ul class="bullets">
+          <li>Designed & documented network architecture; ensured configuration clarity and security standards.</li>
+          <li>Implemented SSIDs, HA environments, and firewall configurations to improve uptime and protection.</li>
+          <li>Built monitoring/backup platforms using Graylog, Ansible, and GitLab CI/CD automation.</li>
+          <li>Configured VLANs, DHCP, DNS, and EAP for enterprise connectivity and identity management.</li>
+          <li>Provided daily incident support; collaborated with vendors to implement upgrades & cloud integrations.</li>
+          <li>Administered Windows & Google Workspace via GPOs, SCCM, Intune, and Google Admin Console.</li>
+          <li>Deployed certs, AOVPN, and VMware environments (VM builds, storage config, performance tuning).</li>
+        </ul>
+      </article>
+
+      <article class="item" aria-labelledby="exp2">
+        <div class="item-header">
+          <h3 id="exp2">L2 IT Technician — Flywheel IT Services Limited</h3>
+          <span class="meta">Jan 2022 – Jan 2023 · Wembley, UK</span>
+        </div>
+        <ul class="bullets">
+          <li>Resolved incidents & requests via Autotask; provided training and remote support to users.</li>
+          <li>Maintained systems/networks/telephony; imaged & deployed Windows via SCCM.</li>
+          <li>Supported SIMS/FMS; managed AD accounts with PowerShell; synced to Google Admin via LDAP.</li>
+          <li>Configured Cisco routing/switching (VLANs), WLC, and wireless APs; assisted with servers & virtualization.</li>
+          <li>Supported users with Impero; collaborated via Teams across sites.</li>
+        </ul>
+      </article>
+
+      <article class="item" aria-labelledby="exp3">
+        <div class="item-header">
+          <h3 id="exp3">System Engineer — Atos IT Solutions and Services</h3>
+          <span class="meta">Oct 2017 – Dec 2019 · Baroda, India</span>
+        </div>
+        <ul class="bullets">
+          <li>Monitored & scheduled batch jobs with BMC Control‑M; used ServiceNow for ITSM workflows.</li>
+          <li>Analyzed network performance with Wireshark; installed VMware servers for remote clients.</li>
+          <li>Delivered 1st‑line support; handled VoIP calls for international customers.</li>
+        </ul>
+      </article>
+
+      <article class="item" aria-labelledby="exp4">
+        <div class="item-header">
+          <h3 id="exp4">Trainee — AGILE Infoways Pvt. Ltd</h3>
+          <span class="meta">Jun 2016 – Jul 2017 · Ahmedabad, India</span>
+        </div>
+        <ul class="bullets">
+          <li>Built an iOS app (Swift + Firebase) for India’s Fire Management System with real‑time tracking & alerts.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section aria-labelledby="education">
+      <h2 id="education">Education & Certifications</h2>
+      <div class="edu">
+        <div><strong>University of Portsmouth</strong> — MSc, Computer Systems Networking & Telecommunications (2020–2021)</div>
+        <div><strong>Government Engineering College, Gandhinagar</strong> — BEng, Computer Software Engineering (2013–2017)</div>
+      </div>
+      <ul class="chips">
+        <li>CCNA — Cisco Certified Network Associate</li>
+        <li>Windows 10: Administration (course)</li>
+        <li>CompTIA A+ (Microprocessing & RAM prep)</li>
+      </ul>
+    </section>
   </main>
 
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Julee Makhecha. Last updated <span id="updated"></span>.</p>
+  </footer>
+
   <script>
-    // Auto‑fill the "Last updated" date
-    (function(){
-      const el = document.getElementById('updated');
-      if (el) {
-        const d = new Date();
-        el.textContent = d.toLocaleDateString(undefined, { year: 'numeric', month: 'short' });
-      }
-    })();
+    const btn = document.getElementById('themeBtn');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const saved = localStorage.getItem('theme');
+    if(saved) document.documentElement.setAttribute('data-theme', saved);
+    else document.documentElement.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+    btn.addEventListener('click', () => { 
+      const cur = document.documentElement.getAttribute('data-theme');
+      const next = cur === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+      btn.setAttribute('aria-pressed', String(next==='dark'));
+    });
+    const y = document.getElementById('year');
+    const u = document.getElementById('updated');
+    if (y) y.textContent = new Date().getFullYear();
+    if (u) u.textContent = new Date().toLocaleDateString(undefined, {year:'numeric', month:'short'});
   </script>
 </body>
 </html>
