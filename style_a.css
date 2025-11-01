@@ -1,10 +1,10 @@
 /* ---------- Base & Theme ---------- */
 :root {
   --bg: #ffffff;
-  --fg: #111827;
+  --fg: #2c4272;
   --muted: #4b5563;
   --card: #f8fafc;
-  --accent: #2563eb;
+  --accent: #304e8d;
   --chip: #eef2ff;
   --chip-text: #1e293b;
   --line: #e5e7eb;
@@ -30,7 +30,53 @@ body {
   color: var(--fg);
   background: var(--bg);
 }
+.project {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 24px;
+  box-shadow: var(--shadow);
+  transition: transform .25s ease, box-shadow .3s ease;
+}
 
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.project h3 {
+  margin-top: 0;
+  color: var(--accent);
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.project p {
+  color: var(--muted);
+  font-style: italic;
+  margin: 0 0 12px 0;
+}
+
+.project ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.project li {
+  margin-bottom: 6px;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 720px) {
+  .project {
+    padding: 16px;
+  }
+  .project h3 {
+    font-size: 16px;
+  }
+}
 .page { max-width: 980px; margin: 0 auto; padding: 24px; }
 
 /* Skip link */
@@ -105,4 +151,59 @@ h2 { font-size: 14px; letter-spacing: 1.2px; text-transform: uppercase; color: v
   .site-header, .hero .cta, .theme-toggle, .skip { display: none !important; }
   body { background: white; color: black; }
   .item, .chips li { box-shadow: none; }
+}
+.award {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  box-shadow: var(--shadow);
+  transition: transform .25s ease, box-shadow .3s ease;
+}
+
+.award:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0,0,0,.08);
+}
+
+.award h3 {
+  margin: 0;
+  font-size: 16px;
+  color: var(--fg);
+}
+
+.award .meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 720px) {
+  .award { padding: 12px 14px; }
+  .award h3 { font-size: 15px; }
+}
+#references {
+  margin-top: 28px;
+}
+
+#references + p,
+section#references p {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: var(--shadow);
+  color: var(--fg);
+  line-height: 1.6;
+}
+
+#references a {
+  color: #858fa5;
+  text-decoration: none;
+}
+
+#references a:hover {
+  text-decoration: underline;
 }
